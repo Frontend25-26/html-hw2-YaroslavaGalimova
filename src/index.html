@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Rubik+Spray+Paint&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>HW1</title>
 </head>
 <body>
@@ -17,10 +20,10 @@
                 <li><a href="https://nukadeti.ru/audioskazki/vinni_pukh_i_vse_vse_vse">Аудиокнига</a></li>
             </ul>
         </nav>
-        <section>
+        <section class="central-section">
             <div class="base-information">
                 <div class="profile">
-                    <img src="/img/profile-photo.jpg" width="500" height="500" alt="Винни-Пух"/>
+                    <img src="/img/winnie-without-background.png" width="500" height="560" alt="Винни-Пух"/>
                     <div class="songs">
                         <audio controls>
                             <source src="/music/puh.mp3" type="audio/mpeg">
@@ -61,19 +64,19 @@
                             <td>Как зовут его друзей?</td>
                             <td>
                                 <dl>
-                                    <dt>Кристофер Робин</dt>
+                                    <dt id="kristopher-robin">Кристофер Робин</dt>
                                     <dd>Мальчик, лучший друг Винни-Пуха</dd>
-                                    <dt>Пятачок</dt>
+                                    <dt id="pyatachok">Пятачок</dt>
                                     <dd>Маленький розовый поросёнок</dd>
-                                    <dt>Иа</dt>
+                                    <dt id="ia">Иа</dt>
                                     <dd>Грустный ослик</dd>
-                                    <dt>Тигра</dt>
+                                    <dt id="tigra">Тигра</dt>
                                     <dd>Весёлый и прыгучий тигр</dd>
-                                    <dt>Кенга и Ру</dt>
+                                    <dt id="kenga-ru">Кенга и Ру</dt>
                                     <dd>Мама-кенгуру и её сын</dd>
-                                    <dt>Сова</dt>
+                                    <dt id="sova">Сова</dt>
                                     <dd>Мудрая птица</dd>
-                                    <dt>Кролик</dt>
+                                    <dt id="krolik">Кролик</dt>
                                     <dd>Деловой и заботливый кролик</dd>
                                 </dl>
                             </td>
@@ -89,38 +92,52 @@
                         Его большое сердце с лихвой компенсирует опилки в голове, а богатое воображение позволяет ему попадать в забавные истории и легко находить выход даже из самых неприятных ситуаций.
                     </p>
                     <p>
-                        <dfn>Винни-Пух</dfn> стал настоящим другом не только для своего настоящего хозяина - Кристофера Робина, но и для юных читателей по всеми миру. Так, например,
+                        <dfn>Винни-Пух</dfn> стал настоящим другом не только для своего хозяина - Кристофера Робина, но и для юных читателей по всеми миру. Так, например,
                         компания "Союзмультфильм" выпустила мультфильм о его приключениях, который стал классикой анимации и любимым фильмом для детей и взрослых. Также
                         были созданы театральные постановки и радиопередачи, посвященные этому замечательному персонажу. Экранизация компании "Дисней" сделала Винни-Пуха ещё более узнаваемым персонажем.
                     </p>
                 </article>
             </div>
             <hr>
-            <figure>
-                <img src="img/disney-version.jpg" alt="Винни-Пух">
-                <figcaption>Винни-Пух в версии Диснея</figcaption>
-            </figure>
+            <div class="figures">
+                <figure>
+                    <img src="img/disney-version.jpg" alt="Винни-Пух" width=auto height=400>
+                    <figcaption>Винни-Пух в версии Диснея</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/original.jpg" alt="Винни-Пух" width=auto height=400>
+                    <figcaption>Винни-Пух в версии Союзмультфильма</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/friends.jpg" alt="Винни-Пух и его друзья" width=auto height=400>
+                    <figcaption>Друзья Винни-Пуха</figcaption>
+                </figure>
+            </div>
             <hr>
         </section>
-        <aside>
+        <div class="quotes">
             <h2 title="Лучший способ узнать характер персонажа - это прочитать его цитаты. Даже если персонаж - медведь!">Цитаты</h2>
-            <blockquote cite="Винни-Пух идёт в гости">
+            <blockquote>
                 <p>— Пух, тебе что намазать — мёду или сгущенного молока?<br>
                 — И того и другого! И можно без хлеба.</p>
             </blockquote>
+            <cite>Винни-Пух идёт в гости</cite>
             <p>───────ʕ·͡ᴥ·ʔ───────</p>
-            <blockquote cite="Винни-Пух и все-все-все">
+            <blockquote>
                 <p>Ты не забывай, что у меня в голове опилки. Длинные слова меня только огорчают.</p>
             </blockquote>
+            <cite>Винни-Пух и все-все-все</cite>
             <p>───────ʕ ᵔᴥᵔ ʔ───────</p>
-            <blockquote cite="Приключения Винни Пуха">
+            <blockquote>
                 <p>Нужно делать так, как нужно. А как не нужно, делать не нужно!</p>
             </blockquote>
+            <cite>Приключения Винни Пуха</cite>
             <p>────────ʕ￫ᴥ￩ʔ───────</p>
-        </aside>
+        </div>
     </main>
+    <hr>
     <footer>
-        <hr>
+        <img src="img/asking-winnie.gif" alt="Винни-Пух" width="55" height="55"/>
         <p>Сделано с любовью ♥. По вопросам обращаться к <a href="https://github.com/YaroslavaGalimova" title="Это что? Мой гитхаб?">Ярославе</a></p>
     </footer>
 </body>
