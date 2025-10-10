@@ -189,12 +189,21 @@ figure {
     margin: 1em 0;
     text-align: center;
     background-color: var(--main-color);
+}
 
-    :hover {
-        transform: scale(1.03);
-        transition: transform 0.3s;
-        box-shadow: 0 0 .5em .1em var(--second-text-color);
-    }
+figcaption {
+    border-color: var(--second-text-color);
+    border-style: solid;
+}
+
+.figure-img{
+    box-shadow: 0 0 .5em .05em var(--second-text-color);
+}
+
+.figure-img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s;
+    box-shadow: 0 0 .5em .1em var(--second-text-color);
 }
 
 div.quotes {
