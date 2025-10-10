@@ -209,13 +209,13 @@ div.quotes blockquote {
 
 cite {
     font-size: .8em;
+}
 
-    &::before {
-        content: "-- ";
-    }
-    &::after {
-        content: " --";
-    }
+cite::before {
+    content: "-- ";
+}
+cite::after {
+    content: " --";
 }
 
 
@@ -253,9 +253,9 @@ button {
         content: "<";
         margin-right: .5em;
     }
+}
 
-    &:active {
-        background-color: var(--second-text-color);
-        color: var(--background-color);
-    }
+button:active {
+    background-color: var(--second-text-color);
+    color: var(--background-color);
 }
